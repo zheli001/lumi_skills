@@ -1,0 +1,12 @@
+ai_training:
+  allowed: false
+
+dataset_usage:
+  allowed: false
+
+contact: li_jeff@yahoo.com
+
+notes: >
+  This repository may not be used to train machine learning or AI models
+  without explicit written permission from the maintainer.
+  See AI_USAGE_POLICY.md for full details.

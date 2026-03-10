@@ -1,6 +1,7 @@
-# Lumi Skills
+# lumi_skills
 
-AI skills collection for sharing reusable, composable building blocks ("skills") that can be used across applications and agents.
+An open-source collection of reusable AI skills and composable building blocks
+for sharing across applications and agents.
 
 ## Status
 
@@ -9,21 +10,42 @@ AI skills collection for sharing reusable, composable building blocks ("skills")
 ![Java](https://img.shields.io/badge/Java-17-informational)
 ![Gradle](https://img.shields.io/badge/Build-Gradle-02303A?logo=gradle&logoColor=white)
 
-## What is this repository for?
+## Features
 
-This repository is intended as a lightweight, open-source Java 17 + Gradle project that serves as:
+- Java 17 application with a clean, minimal structure
+- Gradle build system with the Gradle wrapper for reproducible builds
+- JUnit 5 (Jupiter) test suite
+- GitHub Actions CI workflow
+- Apache-2.0 license with full open-source documentation
+- AI usage policy and provenance watermark
 
-- A **home for AI skills** (prompts, configurations, scripts, or other artifacts) stored under the `skills/` directory.
-- A **minimal Java project** that compiles and can be extended with additional tooling over time.
+## Project Structure
 
-The codebase is intentionally kept small so it can be used as a clean starting point for experimentation and sharing.
-
-## Repository layout
-
-- `skills/` — storage directory for skills and skill-related assets.
-- `src/` — Java source code.
-- `docs/` — documentation.
-- `.github/workflows/` — CI workflows.
+```
+lumi_skills/
+├── src/
+│   ├── main/java/com/ruban/ai/skills/
+│   │   └── Application.java
+│   └── resources/
+├── src/test/java/com/ruban/ai/skills/
+│   └── ApplicationTest.java
+├── docs/
+│   └── architecture.md
+├── .github/
+│   ├── workflows/ci.yml
+│   └── ISSUE_TEMPLATE/
+├── build.gradle
+├── settings.gradle
+├── gradle.properties
+├── gradlew / gradlew.bat
+├── LICENSE
+├── NOTICE
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── CODE_OF_CONDUCT.md
+├── AI_USAGE_POLICY.md
+└── PROVENANCE.md
+```
 
 ## Build
 
@@ -43,14 +65,23 @@ The codebase is intentionally kept small so it can be used as a clean starting p
 ./gradlew run
 ```
 
-## Contributing
+Expected output:
 
-Please read `CONTRIBUTING.md` for the recommended workflow and guidelines.
+```
+lumi_skills started successfully.
+```
+
+## Contribution Guidelines
+
+Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) for the recommended workflow,
+branch naming conventions, and coding guidelines.
 
 ## License
 
-Licensed under the Apache License, Version 2.0. See `LICENSE` for details.
+Copyright (c) 2026 zheli001.realgene.  
+Licensed under the Apache License, Version 2.0. See [`LICENSE`](LICENSE) for details.
 
-## AI usage policy
+## AI Usage Policy
 
-See `AI_USAGE_POLICY.md` for restrictions and contact information.
+This repository may not be used to train machine learning or AI models without
+explicit permission. See [`AI_USAGE_POLICY.md`](AI_USAGE_POLICY.md) for full details.
